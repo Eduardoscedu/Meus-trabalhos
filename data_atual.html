@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="paragrafo_data_fixa"></p>
+        <p id="paragrafo_data_atual"></p>
+
+        <script type="text/javascript">
+            var data_fixa = new Date("2015-03-25");
+            document.getElementById("paragrafo_data_fixa").innerHTML = data_fixa;
+
+            var data_atual = new Date();
+            document.getElementById("paragrafo_data_atual").innerHTML = data_atual;
+        </script>
+    </body>

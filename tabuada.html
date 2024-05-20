@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tabuada</title>
+        <link rel="stylesheet" href="estilo_tabuada.css">
+        <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div id="caixa">
+            <h1 id="titulo">Tabuada</h1>
+            <form id="formulario">
+                <label>
+                    Tabuada do :
+                </label>
+                <input type="text" id="valor" required size="3" maxlength="3">
+                <button type="button" id="botao">
+                    Calcular
+                </button>
+            </form>
+        </div>
+        <p></p>
+        <div id="resultado">
+            
+        </div>
+        <script type="text/javascript">
+            $('#resultado').hide();
+            $('#botao').click(function(){
+                $('#resultado').show();
+                let intValor; // variável local, ou seja, somente esta função utiliza a variável
+                intValor = parseInt(document.getElementById('valor').value);
+                let acumulador = "";
+                for(i=1;i<=10;i++){
+                    acumulador = acumulador + intValor + " X " + i + " = " + (intValor * i) + "<br>";
+                }
+                document.getElementById("resultado").innerHTML = "<h1 id=titulo_resultado>Resultado da Tabuada</h1>" + acumulador;
+            });
+        </script>
+    </body>
+</html>

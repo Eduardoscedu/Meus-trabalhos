@@ -1,0 +1,20 @@
+#titulo{
+    text-align: center;
+    color: blue;
+    font-size: 30px;
+}
+
+a {
+    font-family: arial;
+    font-size: 20px;
+    color: red;
+    margin: auto;
+    padding: 5px;
+    max-width: 300px;
+} 
+
+
+.paises {
+    font-family: arial, verdana;
+    font-size: 16px;
+}

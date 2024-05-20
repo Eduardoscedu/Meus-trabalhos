@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script type="text/javascript">
+        var vetor = new Array();
+        vetor[0] = 140;
+        vetor[1] = 24;
+        vetor[2] = 12;
+        vetor[3] = 3;
+        vetor[4] = 1;
+
+        var qtdeValores = vetor.length; //5
+        var i; //variaveis tipo numéricos inteiro que controlam a interação do loop WHILE
+        var menorValor = vetor[0];
+        var i = 1;
+        while (i  < qtdeValores) {
+            if(menorValor > vetor[i]) {
+                menorValor = vetor[i];
+                
+            }
+            i++;
+        }
+        document.write("O menor valor do vetor é = " + menorValor);
+        </script>
+    </body>
+</html>

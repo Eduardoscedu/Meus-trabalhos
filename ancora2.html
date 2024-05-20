@@ -1,0 +1,259 @@
+<!Doctype html>
+<html lang="pt-br"></html>
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+
+        function ocultarContinentes(){
+            window.document.getElementById('americasul').style.visibility = 'collapse';
+            window.document.getElementById('americanorte').style.visibility = 'collapse';
+            window.document.getElementById('americacentral').style.visibility = 'collapse';
+            window.document.getElementById('paisesasia').style.visibility = 'collapse';
+            window.document.getElementById('paisesafrica').style.visibility = 'collapse';
+            window.document.getElementById('paisesoceania').style.visibility = 'collapse';
+            window.document.getElementById('paiseseuropa').style.visibility = 'collapse';
+
+        }
+        function exibirSul(){
+            window.document.getElementById('americasul').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function voltar(){
+            window.document.getElementById('continentes').style.visibility = 'visible';
+            this.ocultarContinentes();
+        }
+        function exibirNorte(){
+            window.document.getElementById('americanorte').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function exibirCentral(){
+            window.document.getElementById('americacentral').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function exibirasia(){
+            window.document.getElementById('paisesasia').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function exibirafrica(){
+            window.document.getElementById('paisesafrica').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function exibiroceania(){
+            window.document.getElementById('paisesoceania').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+        function exibireuropa(){
+            window.document.getElementById('paiseseuropa').style.visibility = 'visible';
+            window.document.getElementById('continentes').style.visibility = 'collapse';
+        }
+    </script>
+
+    <title>Continentes</title>
+
+    <link rel="stylesheet" href="continentes.css">
+</head>
+<body onload="ocultarContinentes()">
+
+
+    <article>
+
+        <div id="continentes">
+            <header>
+                <h1 id="titulo">Continentes</h1>
+            </header>
+            
+            <section>
+
+                <table cellpadding="1" cellspacing="0" align="center" border="1">
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibirSul()" href="#"> Paises da América do Sul</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibirNorte()" href="#">Paises da América do Norte</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                    <a onclick="exibirCentral()" href="#">Paises da América do Central</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibirasia()" href="#">Paises da Asia</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibireuropa()" href="#">Paises da Europa</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibirafrica()" href="#">Paises da Africa</a>
+                        </td>
+                    </tr>
+
+                    <tr height="50">
+                        <td>
+                            <a onclick="exibiroceania()" href="#">Paises da Oceania</a>
+                        </td>
+                    </tr>
+
+                </table>
+        
+            </section>  
+        </div>
+
+    <div id="americasul">
+        <header>
+            <h2 class="subtitulo">America do sul</h2>
+        </header>
+
+        <span  class="paises">
+            &nbsp;&nbsp;&nbsp;Brasil<br>
+            &nbsp;&nbsp;&nbsp;Paraguai<br>
+            &nbsp;&nbsp;&nbsp;Uruguai<br>
+            &nbsp;&nbsp;&nbsp;Chile<br>
+            &nbsp;&nbsp;&nbsp;Bolivia<br>
+            &nbsp;&nbsp;&nbsp;Equador<br>
+            &nbsp;&nbsp;&nbsp;Argentina<br>
+            &nbsp;&nbsp;&nbsp;Colombia<br>
+            &nbsp;&nbsp;&nbsp;Peru<br>
+            &nbsp;&nbsp;&nbsp;Venezuela<br>
+        </span><br>
+
+        <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="americanorte">
+        <header>
+            <h2 class="subtitulo">America do Norte</h2>
+        </header>
+
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;México<br>
+            &nbsp;&nbsp;&nbsp;Estados Unidos<br>
+            &nbsp;&nbsp;&nbsp;Canada<br>
+        </span><br>
+        
+        <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="americacentral">
+        <header>
+            <h2 class="subtitulo">America Central</h2>
+        </header>
+        
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;Porto Rico <br>
+            &nbsp;&nbsp;&nbsp;Honduras<br>
+            &nbsp;&nbsp;&nbsp;Guatemala<br>
+            &nbsp;&nbsp;&nbsp;Jamaica<br>
+            &nbsp;&nbsp;&nbsp;El Salvador<br>
+            &nbsp;&nbsp;&nbsp;Mexico<br>    
+            &nbsp;&nbsp;&nbsp;Costa Rica<br>
+            &nbsp;&nbsp;&nbsp;Panama<br>
+        </span><br>
+        
+        <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="paisesasia">
+        <header>
+            <h2 class="subtitulo">Paises da Asia</h2>
+        </header>
+
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;India <br>
+            &nbsp;&nbsp;&nbsp;Japão<br>
+            &nbsp;&nbsp;&nbsp;Ira<br>
+            &nbsp;&nbsp;&nbsp;Coreia do Sul<br>
+            &nbsp;&nbsp;&nbsp;Vietinã<br>
+            &nbsp;&nbsp;&nbsp;kwai<br>    
+            &nbsp;&nbsp;&nbsp;China<br>
+            &nbsp;&nbsp;&nbsp;Libano<br>
+            &nbsp;&nbsp;&nbsp;Coreia do Norte<br>
+        </span><br>
+
+        <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="paisesafrica">
+        <header>
+            <h2 class="subtitulo">Paises da Africa</h2>
+        </header>
+
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;Madagascar<br>
+            &nbsp;&nbsp;&nbsp;Africa do Sul<br>
+            &nbsp;&nbsp;&nbsp;Costa do Marfim<br>
+            &nbsp;&nbsp;&nbsp;Gana<br>
+            &nbsp;&nbsp;&nbsp;Senegal<br>
+            &nbsp;&nbsp;&nbsp;Republica dos Camarões<br>    
+            &nbsp;&nbsp;&nbsp;Mali<br>
+            &nbsp;&nbsp;&nbsp;Egito<br>
+            &nbsp;&nbsp;&nbsp;Marrocos<br>
+            &nbsp;&nbsp;&nbsp;Nigéria<br>
+            &nbsp;&nbsp;&nbsp;Angola<br>
+        </span><br>
+
+        <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="paisesoceania">
+        <header>
+            <h2 class="subtitulo">Paises da Oceania</h2>
+        </header>
+
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;Australia<br>
+            &nbsp;&nbsp;&nbsp;Bornão<br>
+            &nbsp;&nbsp;&nbsp;Nova Zelandia <br>
+        </span><br>
+
+         <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    <div id="paiseseuropa">
+        <header>
+            <h2 class="subtitulo">Paises da Europa</h2>
+        </header>
+
+        <span class="paises">
+            &nbsp;&nbsp;&nbsp;Italia<br>
+            &nbsp;&nbsp;&nbsp;Republica da Irlanda<br>
+            &nbsp;&nbsp;&nbsp;Suécia<br>
+            &nbsp;&nbsp;&nbsp;Austria<br>
+            &nbsp;&nbsp;&nbsp;Russia<br>
+            &nbsp;&nbsp;&nbsp;Alemanha<br>
+            &nbsp;&nbsp;&nbsp;Holanda<br>
+            &nbsp;&nbsp;&nbsp;Noruega<br>
+            &nbsp;&nbsp;&nbsp;França<br>
+            &nbsp;&nbsp;&nbsp;Suiça<br>
+            &nbsp;&nbsp;&nbsp;Belgica<br>
+            &nbsp;&nbsp;&nbsp;Servia<br>
+            &nbsp;&nbsp;&nbsp;Polonia<br>
+            &nbsp;&nbsp;&nbsp;Ucrania<br>
+            &nbsp;&nbsp;&nbsp;Republica Tcheca<br>
+            &nbsp;&nbsp;&nbsp;Bulgaria<br>
+            &nbsp;&nbsp;&nbsp;Portugal<br>
+            &nbsp;&nbsp;&nbsp;Romenia<br>
+            &nbsp;&nbsp;&nbsp;Eslovaquia<br>
+            &nbsp;&nbsp;&nbsp;Escocia<br>
+            &nbsp;&nbsp;&nbsp;Inglaterra<br>
+        </span><br>
+
+         <a onclick="voltar()" href="#">Voltar</a>
+    </div>
+
+    </article>
+</body>

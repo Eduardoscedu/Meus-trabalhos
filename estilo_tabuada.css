@@ -1,0 +1,60 @@
+body {
+    font-family: verdana;
+    font-size: 14px;
+    background-color: #000099
+}
+
+label {
+    font-family: Tahoma;
+    font-size: 16px
+}
+
+#valor {
+    border: solid #6600cc 2px;
+    background-color: #0066ff;
+    border: solid #ffcc00 2px;
+    border-radius: 5px;
+    color:#ffffff
+}
+
+#botao {
+    background-color: #0066ff;
+    border: solid #ffcc00 2px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#caixa {
+    width:20%;
+    margin: auto;
+    background-color: #0066ff;
+    border: solid #ffcc00 2px;
+    border-radius: 10px;
+    padding: 20px
+}
+
+#resultado {
+    width:20%;
+    margin: auto;
+    font-family: arial;
+    font-size: 20px;
+    background-color: #0066ff;
+    border: solid #ffcc00 2px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#titulo {
+    font-family: "Comic sans MS";
+    font-size: 26px;
+    text-align: center
+} 
+
+#titulo_resultado {
+    font-family: "Comic sans MS";
+    font-size: 18px;
+    text-align: left
+}

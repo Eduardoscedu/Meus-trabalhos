@@ -1,0 +1,240 @@
+create table Cliente (
+idCliente int not null auto_increment,
+primary key (idCliente),
+nome varchar(60) not null,
+sexo enum('M','F') not null,
+orientaçãoSexual varchar(20),
+cpf varchar(14) not null,
+Nasc date not null,
+email varchar(40) not null
+)default charset = utf8;
+
+
+
+create table Telefone (
+idTelefone int not null auto_increment,
+primary key (idTelefone),
+tipo enum('res','cel','com') not null,
+codigoArea char(3) not null
+)default charset = utf8;
+
+create table Endereço (
+idindereco int not null auto_increment,
+primary key (idindereco),
+logradouro varchar(50) not null,
+numero varchar(3) not null,
+complemento varchar(10) not null,
+cidade varchar(30) not null,
+estado char(2) not null,
+tipo enum('res','cel','com') not null,
+cep char(9) not null
+)default charset = utf8;
+
+
+
+Cliente:
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Adolfo Hitler","M","Gay","740.539.842-14","1889-04-20","Adolf.Hitler1840@yahoo.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Eduarda Trembala","F","MicroOnibus","555.460.520-42","1988-10-05","Dudinha123@hotmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Victor Marquili","F","Homosapien","847.966.444-13","2003-11-19","vitinho.felice@gmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Matheus Farofa","M","Simio","400,289.226-95","2004-02-02","tevisgamer@gmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Guilherme Jusuinu","M","Largatixa","345.129.699-42","2004-06-11","QuebreiAbanca@gmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("JapaOnes Togani","M","Pastel de Flango","745.866.009-57","2004-05-13","PassaA2aii@gmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Gabriel Putao","M","Esquisito","213.442.655-96","2003-10-16","BebedorEmPotencial@gmail.com");
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Dudu Spok","M","Esquizofrenico","444.677.435-76","2003-11-29","ReiDelas@gmail.com");
+
+
+
+insert into cliente
+(nome,sexo,orientaçãoSexual,cpf,Nasc,email)
+ values 
+("Bibs Doidinha","F","Depende Do Dia","375.999.621-13","2004-01-13","BibsCherosa@baiduu.com");
+
+
+Telefone:
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","+49");
+
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","082");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("com","044");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("res","072");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","011");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","813");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("com","081");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","015");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("cel","018");
+
+
+insert into telefone
+(tipo,codigoArea)
+ values 
+("com","082");
+
+
+
+
+
+Endereço:
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Ahornstrabe","345","apto 25C","Braunau am Inn","AT","92155322");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Avenida Comandante Sampaio","127","apto 69A","São Paulo","SP","06182-325");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Av. José Alves Negro","72","","Maringa","PR","87045-260");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("R. Jaguaribe","69","","Higienópolis","BA","01224-001");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Rua Ouro Preto","111","Sobrado 2° Andar","Carapicuiba","SP","06385-070");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Rua Gakuen dori ST","001","","Yokahama","KG","40028-922");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Rua Setúbal","140","Apto 35D","Recife","PE","05302-010");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Rua Darcy Fruet","200","","Sorocaba","SP","18057-063");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Avenida Antônio Assis de Carvalho","34","apto 44B","Presidente Prudente","SP","19026-725");
+
+
+insert into endereço
+(logradouro,numero,complemento,cidade,estado,cep)
+ values 
+("Rua Tenente Adherbal Brasil","88","","Rio Branco","AC","69918-430");
+
+
+alter table aluno
+
+add constraint pk_idaluno primary key(idaluno);
+
+alter table aluno
+
+change column idaluno idaluno int auto_increment ;
+
+
+
+alter table cursos
+
+add constraint pk_idcurso primary key(idcurso),
+
+change column idcurso idcurso int auto_increment;
+
+alter table aluno
+
+add constraint fk_idcurso foreign key(id_curso)
+
+references cursos(idcurso);
